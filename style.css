@@ -1,0 +1,446 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* HORIZONTAL LINES */
+hr {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border: none;
+    margin: 0;
+}
+
+body {
+    background: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+/* NAVIGATION */
+.navbar {
+    width: 100%;
+    min-height: 100px;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #ed315c;
+    text-decoration: underline;
+}
+
+/* HOME */
+.hero {
+    width: 100%;
+    height: 750px;
+    background:
+        linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),
+        url("cht.png");
+        
+
+    background-size: cover;
+    background-position: center 35%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    margin-left: 16%;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 90px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.hero-content h1 span {
+    color: #ed315c;
+}
+
+.hero-content p {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    font-size: 85px;
+    color: white;
+}
+
+.arrow.left {
+    left: 30px;
+}
+
+.arrow.right {
+    right: 30px;
+}
+
+/* ALL SECTIONS */
+.section {
+    width: 100%;
+    padding: 65px 8%;
+    background: #101010;
+    border: none;
+}
+
+.section h2 {
+    color: #ed315c;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 55px;
+}
+
+/* ABOUT ME */
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    min-height: 400px;
+}
+
+.personal-info {
+    width: 45%;
+    padding-left: 3%;
+}
+
+.personal-info h3 {
+    font-size: 32px;
+    margin: 35px 0;
+}
+
+.about-description {
+    width: 45%;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* MY SKILLS */
+.skills-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 65px;
+    min-height: 450px;
+}
+
+.skill-image {
+    width: 45%;
+    text-align: center;
+}
+
+.skill-image img {
+    width: 95%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.skill-image h3 {
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.skill-description {
+    width: 50%;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* MY TALENT */
+.talents-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 0;
+    min-height: 450px;
+}
+
+.talent-item {
+    text-align: center;
+}
+
+.talent-item img {
+    width: 220px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.talent-item h3 {
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+/* ACHIEVEMENTS */
+.achievement-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    min-height: 350px;
+}
+
+.achievement-content img {
+    width: 420px;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* CONTACT */
+.contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 350px;
+}
+
+.contact-message p {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.contact-arrow {
+    font-size: 100px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.social-icons a {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.instagram {
+    background: linear-gradient(
+        45deg,
+        #ffb347,
+        #ff3366,
+        #833ab4
+    );
+}
+
+.tiktok {
+    background: transparent;
+    color: #25f4ee !important;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    text-align: center;
+    color: #1677e8;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 35px;
+    background: #101010;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 10px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 500px;
+        background-position: center;
+    }
+
+    .hero-content {
+        margin-left: 8%;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .arrow {
+        font-size: 40px;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .section h2 {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .personal-info,
+    .about-description {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .personal-info h3 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .about-description {
+        font-size: 16px;
+    }
+
+    .skills-content {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .skill-image,
+    .skill-description {
+        width: 100%;
+    }
+
+    .skill-image img {
+        width: 100%;
+        height: 270px;
+    }
+
+    .skill-image h3 {
+        font-size: 23px;
+    }
+
+    .skill-description {
+        font-size: 16px;
+    }
+
+    .talents-content {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .talent-item img {
+        width: 100px;
+        height: 160px;
+    }
+
+    .talent-item h3 {
+        font-size: 19px;
+    }
+
+    .achievement-content {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .achievement-content img {
+        width: 90%;
+        height: 200px;
+    }
+
+    .contact-content {
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .contact-message p {
+        font-size: 20px;
+    }
+
+    .contact-arrow {
+        font-size: 45px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icons a {
+        width: 50px;
+        height: 50px;
+        font-size: 32px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 25px 10px;
+    }
+}
+    
